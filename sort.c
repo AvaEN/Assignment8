@@ -30,13 +30,10 @@ int main (){
 		printf("%d\n",input_arr[i]); // Print random numbers in the array
 	}
 
-
 	asc_arr = input_arr;
 	des_arr = input_arr;
 
-
 //ascending order
-
 	for (i=0; i!=array_size-1; i++){
 		for (n = i + 1; n != array_size; n++){		
 			if (asc_arr[n] > asc_arr[i]){
@@ -53,7 +50,6 @@ int main (){
 		printf("%d\n",asc_arr[i]);  // diagnostic for ascending
 	}
 
-
 //descending order
 	for (i=0; i!=array_size-1; i++){
 		for (n = i+1; n != array_size; n++){		
@@ -64,21 +60,10 @@ int main (){
 			}
 		}
 	}
-
 	printf("\nArray is sorted in descending order:\n");
 	for (i = 0; i < array_size; i++) {
 
 		printf("%d\n",des_arr[i]);
 	}
-
-
-
-
-
 	return 0;
 }
-
-
-
-
-
