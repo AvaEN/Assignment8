@@ -6,7 +6,7 @@
 //#include <string.h>
 #include <math.h>
 
-#define MAXSIZE 10
+#define MAXSIZE 10 //source: http://www.sanfoundry.com/c-program-mean-variance-standard-deviation/
 
 int main(){
 	FILE *arrFile = fopen("floats.txt", "r");
@@ -19,7 +19,7 @@ int main(){
 	int i;
 	//float mean; //mean of the floats
 	//float sum = 0;
-	float x[MAXSIZE];
+	float x[MAXSIZE]; //from same source as above
 	printf("Numbers in the array: \n");
 
 	for(i = 0; i<5; i++) {
@@ -45,11 +45,12 @@ int main(){
 	}
 
 	variance = sum1 / 5;
-	std_deviation = sqrt(variance);
+	std_deviation = sqrt(variance); //this section is taken from the same source as the MAXSIZE
 	printf("Average/Mean: %.2f\n", average);
 	//printf("Variance of numbers in array: %.2f\n", variance);
 	printf("Standard Deviation: %.2f\n", std_deviation);
-	//mean = sum/5;
+
+
 	fclose(arrFile);
 	//printf("Here is the mean: %d \n", mean);
 
