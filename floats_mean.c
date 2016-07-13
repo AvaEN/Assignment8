@@ -10,16 +10,12 @@
 
 int main(){
 	FILE *arrFile = fopen("floats.txt", "r");
-	//float temp;
 	char arr[100];
-	//float float_arr[100];
 	float average, variance, std_deviation, sqr_num, sum = 0, sum1 = 0;
 	float a;
 	fgets(arr, sizeof(arr), arrFile);
 	int i;
-	//float mean; //mean of the floats
-	//float sum = 0;
-	float x[MAXSIZE]; //from same source as above
+	float x[MAXSIZE]; //from same source as #define MAXSIZE 10
 	printf("Numbers in the array: \n");
 
 	for(i = 0; i<5; i++) {
@@ -45,7 +41,7 @@ int main(){
 	}
 
 	variance = sum1 / 5;
-	std_deviation = sqrt(variance); //this section is taken from the same source as the MAXSIZE
+	std_deviation = sqrt(variance); //this section of code is from the same source as #define MAXSIZE 10
 	printf("Average/Mean: %.2f\n", average);
 	//printf("Variance of numbers in array: %.2f\n", variance);
 	printf("Standard Deviation: %.2f\n", std_deviation);
