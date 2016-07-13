@@ -1,0 +1,12 @@
+Ava N.
+July 12, 2016
+
+Assignment 8:
+
+1. The output is ABCabc123
+
+2. 7 bytes will be lost.
+
+3. line 28.
+
+4. free(p) needs to be included at least in line 28.
