@@ -46,9 +46,6 @@ int main(){
 	//printf("Variance of numbers in array: %.2f\n", variance);
 	printf("Standard Deviation: %.2f\n", std_deviation);
 
-
 	fclose(arrFile);
-	//printf("Here is the mean: %d \n", mean);
-
 	return 0;
 }
